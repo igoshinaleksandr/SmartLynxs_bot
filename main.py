@@ -3,10 +3,8 @@ from sys import prefix
 
 from aiogram import  Bot, Dispatcher, types
 from  aiogram.filters.command import Command, CommandObject
-from api_token import TOKEN
+from config.bot_config import bot, dp
 
-bot = Bot(TOKEN)
-dp = Dispatcher()
 
 TEXT = '''
 /help - справочний текст
