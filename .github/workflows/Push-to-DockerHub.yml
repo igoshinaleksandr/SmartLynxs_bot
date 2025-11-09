@@ -28,3 +28,6 @@ jobs:
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/SmartLynxs_bot:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/SmartLynxs_bot:${{ github.sha }}
+# Передаём токен как ARG
+          build-args: |
+            API_TOKEN=${{ secrets.API_TOKEN }}
