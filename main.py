@@ -4,6 +4,10 @@ from sys import prefix
 from aiogram import  Bot, Dispatcher, types
 from  aiogram.filters.command import Command, CommandObject
 from config.bot_config import bot, dp
+# === Для иморта API токена локально ===
+import os
+from pathlib import Path
+
 
 
 TEXT = '''
