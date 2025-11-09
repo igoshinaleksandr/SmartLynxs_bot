@@ -26,8 +26,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/SmartLynxs_bot:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/SmartLynxs_bot:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/smartlynxs_bot:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/smartlynxs_bot:${{ github.sha }}
 # Передаём токен как ARG
           build-args: |
             API_TOKEN=${{ secrets.API_TOKEN }}
