@@ -13,5 +13,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 5. Копируем остальной код
 COPY . .
 
+# Передаём токен как ARG (будет подставлен при сборке)
+ARG API_TOKEN
+ENV API_TOKEN=$API_TOKEN
+
 # 6. Определяем команду запуска
 CMD ["python", "main.py"]
